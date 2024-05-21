@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.8.1/dist/themes/classic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="navbar"><div id="export">Sam, Eljo, and Will's Basic 3D Modeler</div></div>
+    <script type="module" src="script.js"></script>
+    <div id="container">
+      <div id="canvas"></div>
+      <div id="sidebar">
+        <div id="buttons">
+          <button id="button1">Camera</button>
+          <button id="button2">Move</button>
+          <button id="button3">Vertex</button>
+        </div>
+        <div id="shape-info">
+          No Shape<br>
+          (0, 0, 0)
+        </div>
+        <div id="color-pick">
+          <label for="colorpicker">Color Picker:</label>
+          <input type="color" id="colorpicker" value="#0000ff">
+        </div>
+        <div id="rotation">
+          Rotate:
+          <input type="number" value="0" name="x deg" id="x">
+          <input type="number" value="0" name="y deg" id="y">
+          <input type="number" value="0" name="z deg" id="z">
+          <button id="rotate">Rotate</button>
+        </div>
+        <div id="intensity">
+          Light Intensity:
+          <input type="range" step="0.01" min="0" max="10" value="6" id="range">
+        </div>
+        <div id="wf">
+          <div class="container">
+            <span class="label">Toggle Wireframe:</span>
+            <div class="toggle-container">
+              <input type="checkbox" id="toggle">
+              <label for="toggle" class="switch"></label>
+            </div>
+          </div>
+        </div>
+        <div id="instructions" style="font-size: 12px; margin-top: 5px; margin-right: 10px; margin-left: 10px;">
+          <p>Instructions:</p>
+          <ol>
+            <li>Shape Creation and Deletion:</li>
+            <ul>
+              <li><strong>Push 'C':</strong> Create a new cube</li>
+              <li><strong>Push 'S':</strong> Create a new sphere</li>
+              <li><strong>Push 'T':</strong> Create a new torus</li>
+              <li><strong>Push 'H':</strong> Create a new tetrahedron</li>
+              <li><strong>Push 'O':</strong> Create a new octahedron</li>
+              <li><strong>Push 'I':</strong> Create a new icosahedron</li>
+              <li><strong>Push 'D':</strong> To delete the currently selected shape</li>
+            </ul>
+            <li>Shape movement</li>
+            <ul>
+              <li><strong>Click a shape:</strong> To select it in move mode</li>
+            </ul>
+            <li>Shape Scaling:</li>
+            <ul>
+              <li><strong>Push 'Q':</strong> To increase the size of the selected shape</li>
+              <li><strong>Push 'A':</strong> To decrease the size of the selected shape</li>
+            </ul>
+            <li>In Camera Mode:</li>
+            <ul>
+              <li><strong>Use arrow keys:</strong> To adjust the angle of the camera from its current position</li>
+            </ul>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <button id="button6" onclick="navigateToOrangutanVideo()">&#129447;</button>
+    <script>
+        function navigateToOrangutanVideo() {
+          window.open('https://www.youtube.com/watch?v=6LGvH-F9Zjg', '_blank');
+        }
+    </script>
+  </body>
+</html>

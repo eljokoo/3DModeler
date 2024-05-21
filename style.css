@@ -1,0 +1,213 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    background-color:#232423;
+    color: #ffffff97;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: #fff 1px 1px;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.356);
+}
+
+#navbar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#sidebar {
+    color: #fff;
+    font-size: 20px;
+    background-color: #000;
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar button {
+    margin: 0;
+    width: 50%;
+    height: 5%;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#sidebar button:hover {
+    background-color: #555;
+}
+
+#container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 88%;
+    width: 100%;
+}
+
+
+#button6 {
+    position: absolute; /* Set absolute positioning */
+    bottom: 10px; /* Adjust the desired bottom distance */
+    right: 20px; /* Adjust the desired right distance */
+    font-size: 64px; /* Increase the font size */
+    padding: 10px 20px; /* Adjust the padding if needed */
+    background-color: transparent;
+    border: none;
+}
+
+#button8 {
+    position: absolute; /* Set absolute positioning */
+    bottom: 20px; /* Adjust the desired bottom distance */
+    right: 390px; /* Adjust the desired right distance */
+    font-size: 64px; /* Increase the font size */
+    padding: 10px 20px; /* Adjust the padding if needed */
+    background-color: transparent;
+    border: none;
+}
+
+#buttons {
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+#shape-info {
+    margin: 10px 10px 10px 10px;
+}
+
+#color-pick {
+    margin: 10px 10px 10px 10px;
+}
+
+#rotation {
+    margin: 10px 10px 10px 10px;
+}
+
+#rotation input {
+    width: 30px;
+}
+
+#rotation button {
+    width: 30px;
+}
+
+#intensity {
+    margin: 10px 10px 10px 10px;
+}
+
+#wf {
+    margin: 10px 10px 10px 10px;
+}
+
+#range {
+    width: 200px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+.label {
+    margin-right: 10px;
+}
+
+.toggle-container {
+    position: relative;
+}
+  
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 6px;
+  }
+  
+.switch::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+
+.switch::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: left 0.4s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .switch::before {
+    background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked + .switch::after {
+    left: calc(100% - 30px);
+}
+
+#button1, #button2, #button3 {
+    padding: 20px;
+    align-items: center;
+}
+
+#button1:hover, #button2:hover, #button3:hover {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+
+#export {
+    cursor: pointer;
+}
