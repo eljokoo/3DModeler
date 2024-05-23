@@ -2,6 +2,8 @@
 
 In this readme we will explain how to use the program as well as what each file in the CS77-final folder does. All of the other folders in the CS77-Final-v2 folder contain files which we imported from three.js. CS77-final contains all of the work we did for the project.
 
+[deployed link](https://threedmodeler.onrender.com)
+
 ## User instructions
 
 To start the program run proj.html using a live server.
